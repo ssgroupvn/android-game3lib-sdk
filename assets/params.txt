@@ -1,0 +1,2 @@
+channelId:SSGROUP
+refID:12345

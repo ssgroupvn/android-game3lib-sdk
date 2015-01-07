@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"    
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"    
+    android:layout_gravity="center" >
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp">
+        
+        <TextView 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ĐĂNG NHẬP"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="81dp"       
+        android:layout_marginBottom="20dp">
+        
+        <EditText
+            android:id="@+id/login_edtxtUsername" 
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"            
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="Tên đăng nhập"/>
+        
+        <EditText
+            android:id="@+id/login_edtxtPassword"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword" />
+        
+        <ImageView 
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_game3"
+            android:layout_marginRight="10dp"/>
+        
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+        
+        <Button 
+            android:id="@+id/login_btnLogin"
+            android:layout_width="120dp"
+            android:layout_height="33dp"
+            android:background="#f36b37"
+            android:text="Đăng nhập"
+            android:textColor="#fff"            
+            android:gravity="center"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="20dp">
+        
+        <TextView 
+            android:id="@+id/login_btnFogetPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quên tài khoản "/>
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="| "/>
+        
+        <TextView 
+            android:id="@+id/login_btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký nhanh"
+            android:textColor="#f36b37"/>
+        
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        
+        <com.facebook.widget.LoginButton
+            xmlns:fb="http://schemas.android.com/apk/res-auto"
+	        android:id="@+id/authButton"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_gravity="center_vertical"
+	        fb:login_text=""
+	        fb:logout_text=""    
+	        android:visibility="gone"   	        
+	        />
+            
+        <Button
+            android:id="@+id/login_btnLoginFB"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"           
+            android:background="@drawable/but_face"
+            android:visibility="visible" />
+        
+        <Button 
+            android:id="@+id/login_btnLoginGG"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/but_google"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"/>
+        
+        <!-- <com.google.android.gms.common.SignInButton           
+			    android:id="@+id/sign_in_button"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center_vertical"/> -->
+        
+        <FrameLayout 
+            android:layout_width="40dp"
+            android:layout_height="40dp">
+	        <com.google.android.gms.common.SignInButton           
+			    android:id="@+id/sign_in_button"
+			    android:layout_width="40dp"
+			    android:layout_height="40dp"
+			    android:layout_gravity="center_vertical"/>
+	        
+	        <ImageView 
+	            android:layout_width="40dp"
+	            android:layout_height="40dp"
+	            android:src="@drawable/but_google"/>
+        </FrameLayout>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/version"/>
+
+</LinearLayout>

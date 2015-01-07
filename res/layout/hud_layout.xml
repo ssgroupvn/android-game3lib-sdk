@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout    
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:minHeight="60dp">
+    
+    <ImageView 
+        android:id="@+id/expand"
+        android:layout_width="50dp"
+        android:layout_height="50dp"                     
+        android:src="@drawable/icon_inapp"/>       
+        
+	    <LinearLayout 
+	        android:id="@+id/item_bg_left"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:minHeight="40dp"
+	        android:background="@drawable/bg_tab"
+	        android:orientation="horizontal"
+	        android:paddingLeft="50dp"
+	        android:paddingRight="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp">
+	
+	        <ImageView
+	            android:id="@+id/item1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/anim_tintuc"
+	            android:paddingLeft="15dp"/>
+	
+	        <ImageView
+	            android:id="@+id/item2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/anim_forum"
+	            android:paddingLeft="15dp" />
+	
+	        <ImageView
+	            android:id="@+id/item3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/anim_cs"
+	            android:paddingLeft="15dp" />
+		    
+		    <ImageView
+		        android:id="@+id/item4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"	        
+		        android:src="@drawable/anim_gamecenter"	        
+		        android:adjustViewBounds="true"
+		        android:paddingLeft="15dp" />
+	
+		    <ImageView
+		        android:id="@+id/item5"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:adjustViewBounds="true"
+		        android:paddingLeft="15dp"
+		        android:src="@drawable/anim_fanpage" />
+	    
+	    </LinearLayout>        
+	    
+	    <ImageView 
+	        android:id="@+id/hint_left"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:src="@drawable/icon_prev_no"/>                
+        
+	    <LinearLayout 
+	        android:id="@+id/item_bg_right"
+	        android:layout_width="wrap_content"
+	        android:layout_height="40dp"
+	        android:minHeight="40dp"
+	        android:background="@drawable/bg_tab"
+	        android:orientation="horizontal"
+	        android:paddingRight="50dp"
+	        android:paddingLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="10dp"
+	        android:gravity="right">
+	
+	        <ImageView
+	            android:id="@+id/item1_r"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/anim_tintuc"
+	            android:paddingRight="15dp" />
+	
+	        <ImageView
+	            android:id="@+id/item2_r"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/anim_forum"
+	            android:paddingRight="15dp" />
+	
+	        <ImageView
+	            android:id="@+id/item3_r"
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent"
+	            android:adjustViewBounds="true"
+	            android:src="@drawable/anim_cs"
+	            android:paddingRight="15dp" />
+		    
+		    <ImageView
+		        android:id="@+id/item4_r"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"	        
+		        android:src="@drawable/anim_gamecenter"	        
+		        android:adjustViewBounds="true"
+		        android:paddingRight="15dp" />
+	
+		    <ImageView
+		        android:id="@+id/item5_r"
+		        android:layout_width="wrap_content"
+		        android:layout_height="match_parent"
+		        android:adjustViewBounds="true"
+		        android:paddingRight="15dp"
+		        android:src="@drawable/anim_fanpage" />
+	    
+	    </LinearLayout>        
+	    
+	    <ImageView 
+	        android:id="@+id/hint_right"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:src="@drawable/icon_next_no"
+	        android:layout_gravity="right"/>        
+
+</FrameLayout>
